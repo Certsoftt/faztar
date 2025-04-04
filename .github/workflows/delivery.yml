@@ -1,0 +1,35 @@
+name: Push & PR CI
+
+on:
+    push:
+        branches:
+            - "master"
+    pull_request:
+        branches:
+            - "master"
+
+jobs:
+  build:
+    name: Linting on CI server
+    runs-on: ubuntu-latest
+    container:
+            'image': node:20
+    strategy:
+      matrix:
+        node-version: [20]
+    steps:
+      - name: Check codebase
+        uses: actions/checkout@v4
+      - run: echo "Checked Code"
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - run: pnpm lint
