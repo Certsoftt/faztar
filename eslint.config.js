@@ -11,7 +11,7 @@ export default antfu(
       semi: true,
       quotes: "double",
     },
-    ignores: [".pnpm-store/*"],
+    ignores: [".pnpm-store/*", "README.md", "LICENSE", "package.json", ".github/*", ".vscode/*"],
   },
   {
     rules: {
@@ -26,7 +26,7 @@ export default antfu(
       }],
       "unicorn/filename-case": ["error", {
         case: "kebabCase",
-        ignore: ["README.md"],
+        ignore: ["README.md", "LICENSE"],
       }],
     },
   },

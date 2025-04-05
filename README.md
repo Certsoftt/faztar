@@ -34,7 +34,6 @@ Your cra boilerplate will have everything you need to build a modern React app:
 
 - ⚙️ **Maintenance** - Built with few dependencies for easy management and maintenance.
 
-
 ## Google Lighthouse
 
 ![1](https://user-images.githubusercontent.com/48876996/121569366-c313e000-ca31-11eb-940c-187f556ff0d6.png)
@@ -53,10 +52,9 @@ Checks for common issues that may prevent users from accessing your content.
 
 Looks for everything from HTTPS usage to correct image aspect ratios.
 
-### SEO 
+### SEO
 
 Checks for best practices to ensure your site is discoverable.
-
 
 ## Installation
 
@@ -64,49 +62,58 @@ You’ll need to have Node 10.16.0 or later version on your local development ma
 
 To get started with this cra-template new app, you have to:
 
-Begin by 
+Begin by
+
 1. Fork the repo
 2. Clone this repository to establish your own local copy. This process is straightforward and ensures you have all the necessary files and resources at your fingertips. You can find step-by-step instructions in this helpful article: Cloning a [repository on GitHub.com](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
 
 Or you can skip step 1 and step 2 by simply running the command:
+
 ```js
 npx create-react-app my-template --template faztar
 ```
+
 3. Run the app using the command `npm start`
 
 4. To deploy to vercel or github pages or both you have to do the following:
-  - ### To Vercel
 
-    1. create a vercel account
-    2. check out this video on how to create and consume your vercel id: [Use GitHub Actions to Deploy to Vercel (Preview & Production Deployments) by camelcase](https://www.youtube.com/watch?v=FHVaWZjWec4&t=150s&pp=ygUvKFByZXZpZXcgJiBQcm9kdWN0aW9uIERlcGxveW1lbnRzKSBieSBjYW1lbGNhc2U%3D)
+- ### To Vercel
 
-  - ### To Github Pages
+  1. create a vercel account
+  2. check out this video on how to create and consume your vercel id: [Use GitHub Actions to Deploy to Vercel (Preview & Production Deployments) by camelcase](https://www.youtube.com/watch?v=FHVaWZjWec4&t=150s&pp=ygUvKFByZXZpZXcgJiBQcm9kdWN0aW9uIERlcGxveW1lbnRzKSBieSBjYW1lbGNhc2U%3D)
 
-    1. edit `homepage` property in the `package.json` file as foolow:
-    ```js
-    "homepage": "https://<github username>.github.io/<github repo-name>"
-    ``` 
-    Currently, the file has my repo and username. Go ahead and have it changed.
-    2. edit and run the following commands:
-    ```git
-    git remote add origin https://github.com/<github username>/<github repo-name>.git
-    git push -u origin main
-    ```
+- ### To Github Pages
 
-    ```js
-    npm run deploy -- -m "Deploy React app to Github Pages"
-    ```
-    3. Visit the your repo that holds the project, then click on the settings tab, go to automation, then pages.
-      - Configure the `Build & deployment` settings to the following:
-      1. Source: set it to `Deploy from a branch`
-      2. Branch: 
-        - Branch: set it to `master` or `main`
-        - Folder: set it to `/(root)`
+  1. edit `homepage` property in the `package.json` file as foolow:
 
-    4. Edit the `deployment.sh` file to have your own github details.
+  ```js
+  "homepage": "https://<github username>.github.io/<github repo-name>"
+  ```
 
-    That's all!
+  Currently, the file has my repo and username. Go ahead and have it changed. 2. edit and run the following commands:
 
+  ```git
+  git remote add origin https://github.com/<github username>/<github repo-name>.git
+  git push -u origin main
+  ```
+
+  ```js
+  npm run deploy -- -m "Deploy React app to Github Pages"
+  ```
+
+  3. Visit the your repo that holds the project, then click on the settings tab, go to automation, then pages.
+
+  - Configure the `Build & deployment` settings to the following:
+
+  1. Source: set it to `Deploy from a branch`
+  2. Branch:
+
+     - Branch: set it to `master` or `main`
+     - Folder: set it to `/(root)`
+
+  3. Edit the `deployment.sh` file to have your own github details.
+
+  That's all!
 
 ## What's included
 
