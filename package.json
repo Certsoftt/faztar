@@ -1,9 +1,9 @@
 {
   "name": "cra-template-faztar",
-  "homepage": "https://github.com/certsoftt/faztar",
   "type": "module",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://github.com/certsoftt/faztar",
   "repository": {
     "type": "git",
     "url": "https://github.com/certsoftt/faztar.git"
@@ -47,7 +47,7 @@
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
   },
-    "lint-staged":{
-      "*":"pnpm lint"
-    }
+  "lint-staged": {
+    "*": "pnpm lint"
+  }
 }
