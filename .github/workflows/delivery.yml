@@ -3,17 +3,15 @@ name: Push & PR CI
 on:
     push:
         branches:
-            - "master"
+          - "master"
     pull_request:
         branches:
-            - "master"
+          - "master"
 
 jobs:
   build:
     name: Linting on CI server
     runs-on: ubuntu-latest
-    container:
-            'image': node:20
     strategy:
       matrix:
         node-version: [20]
