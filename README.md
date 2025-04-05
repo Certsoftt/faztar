@@ -100,7 +100,7 @@ npx create-react-app my-template --template faztar
       - Configure the `Build & deployment` settings to the following:
       1. Source: set it to `Deploy from a branch`
       2. Branch: 
-        - Branch: set it to `gh-pages`
+        - Branch: set it to `master` or `main`
         - Folder: set it to `/(root)`
 
     4. Edit the `deployment.sh` file to have your own github details.
