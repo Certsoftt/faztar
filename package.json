@@ -3,11 +3,30 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "cra boilerplate"
+  ],
+  "description": "The base template for github pages, linting CI, release CI, and vercel CI/CD App.",
   "homepage": "https://github.com/certsoftt/faztar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/certsoftt/faztar.git"
+    "url": "https://github.com/certsoftt/faztar.git",
+    "directory": "packages/cra-template"
   },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "bugs": {
+    "url": "https://github.com/certsoftt/faztar/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -20,12 +39,17 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^7.0.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "axios": "^1.8.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.55.0",
     "react-router-dom": "^7.4.1",
-    "styled-components": "^6.1.17"
+    "styled-components": "^6.1.17",
+    "web-vitals": "^4.2.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.11.0",
