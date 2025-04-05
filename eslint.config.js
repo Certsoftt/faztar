@@ -11,7 +11,7 @@ export default antfu(
       semi: true,
       quotes: "double",
     },
-    ignores: [".pnpm-store/*", "README.md", "LICENSE", "package.json", ".github/*", ".vscode/*","template.json"],
+    ignores: [".pnpm-store/*", "README.md", "LICENSE", "package.json", ".github/*", ".vscode/*","template.json"]
   },
   {
     rules: {
