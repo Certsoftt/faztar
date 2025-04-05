@@ -72,7 +72,87 @@ Or you can skip step 1 and step 2 by simply running the command:
 ```js
 npx create-react-app my-template --template faztar
 ```
+`N/B:` your `package.json` should look like this on completing the installation using the above command
 
+```js
+{
+  "name": "cra-template-faztar",
+  "type": "module",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "cra boilerplate"
+  ],
+  "description": "The base template for github pages, linting CI, release CI, and vercel CI/CD App.",
+  "homepage": "https://github.com/certsoftt/faztar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/certsoftt/faztar.git",
+    "directory": "packages/cra-template"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "bugs": {
+    "url": "https://github.com/certsoftt/faztar/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "axios": "^1.8.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.55.0",
+    "react-router-dom": "^7.4.1",
+    "styled-components": "^6.1.17",
+    "web-vitals": "^4.2.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.11.0",
+    "@eslint-react/eslint-plugin": "^1.40.3",
+    "@eslint/js": "^9.21.0",
+    "@hookform/devtools": "^4.3.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.23.0",
+    "eslint-plugin-format": "^1.0.1",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",
+    "globals": "^15.15.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  },
+  "lint-staged": {
+    "*": "pnpm lint"
+  }
+}
+
+``` 
 3. Run the app using the command `npm start`
 
 4. To deploy to vercel or github pages or both you have to do the following:
