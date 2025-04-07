@@ -1,11 +1,11 @@
+import { Typography } from "@mui/material";
 import React from "react";
+
 import reactLogo from "./assets/react.svg";
+import "./app.css";
+import { Card, Container, ReactLogo, ViteLogo } from "./styles";
 
 import viteLogo from "/vite.svg";
-
-import "./app.css";
-import { Container, Card, ReactLogo, ViteLogo } from "./styles";
-import { Typography } from "@mui/material";
 
 function App() {
   return (
