@@ -1,27 +1,30 @@
+import React from "react";
 import reactLogo from "./assets/react.svg";
 
 import viteLogo from "/vite.svg";
 
 import "./app.css";
+import { Container, Card, ReactLogo, ViteLogo } from "./styles";
+import { Typography } from "@mui/material";
 
 function App() {
   return (
-    <>
-      <div>
+    <React.Fragment>
+      <Container>
         <a href="https://vite.dev" target="_blank" rel="noreferrer noopener">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <ViteLogo src={viteLogo} alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank" rel="noreferrer noopener">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <ReactLogo src={reactLogo} alt="React logo" />
         </a>
-      </div>
-      <h1>FazTar React-CRA Boilerplate Template</h1>
-      <div className="card">
-        <p>
+      </Container>
+      <Typography variant="h1" component="h1">FazTar React-CRA Boilerplate Template</Typography>
+      <Card>
+        <Typography component="p">
           <code>Thanks For Choosing To Use FazTar</code>
-        </p>
-      </div>
-    </>
+        </Typography>
+      </Card>
+    </React.Fragment>
   );
 }
 
