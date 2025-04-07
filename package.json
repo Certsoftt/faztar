@@ -2,7 +2,6 @@
   "name": "cra-template-faztar",
   "type": "module",
   "version": "1.0.0",
-  "private": true,
   "keywords": [
     "react",
     "create-react-app",
@@ -17,7 +16,7 @@
     "directory": "packages/cra-template"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@Certsoftt:registry": "https://npm.pkg.github.com"
   },
   "license": "MIT",
   "engines": {
