@@ -16,6 +16,9 @@
     "url": "https://github.com/certsoftt/faztar.git",
     "directory": "packages/cra-template"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=14"
