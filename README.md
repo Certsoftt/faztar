@@ -1,6 +1,6 @@
 ## Free React-CRA Boilerplate template
 
-`FazTar` is an open-source React-cra boilerplate template written in TypeScript & ESLint, designed for developers and startups, who want to get started with a quick and professional application codebase with already-made CI server for both github and vercel.
+`FazTar` is an open-source React-cra boilerplate template written in TypeScript & ESLint that promotes good coding practice, designed for developers and startups, who want to get started with a quick and professional application codebase with already-made CI server for both github and vercel.
 
 This React-cra boilerplate template comes with three (3) written CI and one (2) CD on vercel and github pages, configured e2e Linting, Linting Before running pre-commits, and Liniting on CI server and few pre-installed libraries and dependencies which can be uninstalled or used if needed.
 
@@ -20,13 +20,13 @@ This React-cra boilerplate template comes with three (3) written CI and one (2) 
 
 Your cra boilerplate will have everything you need to build a modern React app:
 
-- 🎁 **Modern** – Template created using the latest version of React which provide insane API animationas also: State management using Hooks, Code-Splitting to reduce the bundle size.
+- 🎁 **Modern** – Template created using the latest version of React which provide insane API animation and also: State management using Hooks, Code-Splitting to reduce the bundle size.
 
-- 💻 **Responsive** – Highly responsive and reusable UI components using React MAterialUI that is highly customizable and supports any form of styling variant and frameworks.
+- 💻 **Responsive** – Highly responsive and reusable UI components using React MaterialUI that is highly customizable and supports any form of styling variant and frameworks.
 
 - 🚀 **Fast** – Buttery smooth experience when implemented with best practices and no third party dependencies to result in <b>PERFECT</b> Google Lighthouse scores
 
-- 🏷 **TypeScript support** – FazTar can be written in TypeScript to improve the DX
+- 🏷 **TypeScript support** – FazTar si written in TypeScript to improve the DX
 
 - 🛸 **Routing** - Can generate dynamic routing using React-Router-Dom.
 
